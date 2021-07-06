@@ -38,7 +38,7 @@ body{
     
 }
 .main-nav li.active a{
-    color: yellow;
+    color: rgb(20, 7, 43);
 
 }
 .main-nav li a:hover{
@@ -85,7 +85,7 @@ form.search::after{
  height:600px ;  
  background-color: white;
  margin-left: 70%;
- margin-top: -600px;
+ margin-top: -75vh;
 }
 .main-blog{
     float:center;
@@ -108,30 +108,83 @@ h1{
     padding: 15px;
     font-size: 15px;
     font-family:Arial, Helvetica, sans-serif;
-    color: gray;
+    color:darkblue;
 
 
 }
 .main-blog li a:hover{
     background-color: rgb(95, 95, 253);
+    margin-right: 100px;
+}
+.container{
+    height:80vh;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.image{
+    width:40%;
+    margin-top: 10px;
+
+}
+.cardcontent{
+    margin: 30px;
+    display: flex;
+    width: 40%;
+    height: 250px;
+    padding: 10px;
+    background: cornsilk;
+    box-shadow: black 10px 10px 15px;
     
-    margin-right: 250px;
-
-
+    
+    
 }
 .content{
-    display: flex;
     width: 60%;
-    height: 600px;
-    margin-left: 100px;
-    margin-top: 30px;
-    padding: 10px 15px 0px 15px;
-    flex-wrap: wrap;
-    background-color: blue;
-
-}
-.card{
-    display:block;
-    height: 100px;
+    padding: 10px 0px 10px 0px;
     
+    text-align: center;}
+    .content a{
+        margin-bottom: 10px;
+        color: coral;
+    }
+h2{
+    margin-bottom: 10px;
+}
+p{
+    font-size: 20px;
+}
+.signinmodal{
+    width: 100%;
+    height: 100vh;
+    background: rgba(20, 20, 20, 0.795);
+    position: fixed;
+    display: block;
+}
+.signincard{
+
+    margin:5% 10% 10% 20%;
+    
+    background-color: rgb(228, 233, 223);
+    width: 40%;
+    height:70vh;
+    text-align: center;
+    padding: 10%;
+    display: block;
+    font-size:20px;
+    box-shadow: blue 10px 10px 15px;
+}
+
+#close{
+
+    position: absolute;
+    right: 25px;
+    font-size: 35px;
+    font-weight:bold ;
+    margin-right:40%;
+    color: brown;
+    margin-top: -100px;
+}
+#close:hover{
+    color: rgb(14, 14, 223);
 }
