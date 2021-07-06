@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="../css/index2.css">
+    <link rel="stylesheet" href="css/index2.css">
     
     
 </head>
@@ -8,11 +8,10 @@
 <header>
         <div class="navigation">
             <ul class="main-nav" >
-                <li class="active"><a href="index2.html">HOME</a></li>
+                <li class="active"><a href="./index2.html">HOME</a></li>
                     <li><a href="">ABOUT US</a></li>
-                    <li><a href="blog.html">BLOGS</a></li>
                     <li><a href="">CONTACT</a></li>
-                    <li><a href="" id="signinshow"onclick="document.getElementById('signinmodal').style.display='block'">SIGN IN</a></li>
+                    <li><a href="#" class="signinshow"onclick="document.getElementById('showmodal').style.display='block'">SIGN IN</a></li>
                     <li><a href="">NEWS</a></li>
                     
                  </ul>  
@@ -23,44 +22,39 @@
 
             </div>
         </div>
-        <div id="showmodal" class="signinmodal">
+        <div id="showmodal" class="signinmodal" style="display: none;">
             
-            <div class="signincard">
+            <div class="signincard" >
                 <span id="close" onclick="document.getElementById('showmodal').style.display='none'" class="close" title="closemodal">&times;</span>
+            <div style="display: block; ">
                 <h1>Sign in form</h1>
-                <label><b> First name:</b></label>
-                <input type="text" placeholder="Enter your Last name"><br>
-                <label><b> Last name:</b></label>
-                <input type="text" placeholder="Enter your first name"><br>
-                <label><b> Gender</b></label><br>
-                <label > female</label>
-                <input  type="radio" value="female"  name="female" >
-                <label > male</label>
-                <input type="radio"value="male" name="female"><br>
-                <label><b>Password </b></label><br>
-                <input class="signup" type="password" value="" name="pass"><br>
-                <label><b> Re-Enter password</b></label>
-                <input type="password" value="" name="pass"><br>
-                <input type="button" value="submit">
 
-                
+                <label><b> Username:</b></label>
+                <input type="text" placeholder="Enter your Last name"><br>
+                <label><b> Username:</b></label>
+                <input type="password" value="" name="pass"><br>
+                <input type="button" value="submit"><br>
+                <label><b> remember your password</b></label>
+                <input type="checkbox" value="rem" name="remember your password">
+            </div>
+            
             </div>
         </div>
 <div class="container">
     <div class="cardcontent">
-       <img src="../images/istockphoto-1180684429-612x612.jpg" class="image">
+       <img src="images/istockphoto-1180684429-612x612.jpg" class="image">
        <div class="content">
            <h2> <b>learn about SUPERCOMPUTER</b></h2>
         <p>super computer are the fastest and the most expensive computers 
            </p>
-            <a href="oneblog.html" >READ MORE</a>
+            <a href="html/oneblog.html" >READ MORE</a>
 
        </div>
 
     </div>
      
     <div class="cardcontent">
-        <img src="../images/mainframe.jpg" class="image">
+        <img src="images/mainframe.jpg" class="image">
         <div class="content">
             <h2> <b>learn about MAINFRAME</b></h2>
          <p>computers are similar to supercomputers in many aspects 
@@ -70,7 +64,7 @@
         </div>  
      </div>
      <div class="cardcontent">
-        <img src="../images/pexels-josh-sorenson-1054397.jpg" class="image">
+        <img src="images/pexels-josh-sorenson-1054397.jpg" class="image">
         <div class="content">
             <h2> <b>learn about SERVERCOMPUTER</b></h2>
          <p>A server is a central computer that contains collections of data and programs
@@ -80,7 +74,7 @@
         </div>  
      </div>
      <div class="cardcontent">
-        <img src="../images/pexels-nataliya-vaitkevich-5412270.jpg" class="image">
+        <img src="images/pexels-nataliya-vaitkevich-5412270.jpg" class="image">
         <div class="content">
             <h2> <b>learn about WORKSTATION COMPUTER</b></h2>
          <p>are high-end, expensive computers that are made for more 
@@ -91,7 +85,7 @@
         </div>  
      </div>
      <div class="cardcontent">
-        <img src="../images/pexels-designecologist-1779487.jpg" class="image">
+        <img src="images/pexels-designecologist-1779487.jpg" class="image">
         <div class="content">
             <h2> <b>learn about PERSONAL COMPUTER</b></h2>
          <p>it is also known as a Microcomputer. 
@@ -102,7 +96,7 @@
         </div>  
      </div>
      <div class="cardcontent">
-        <img src="../images/pexels-ivan-samkov-4162583.jpg" class="image">
+        <img src="images/pexels-ivan-samkov-4162583.jpg" class="image">
         <div class="content">
             <h2> <b>learn about SMART PHONE</b></h2>
          <p>is a mobile device that combines cellular and mobile computing functions into one unit. 
