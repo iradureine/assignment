@@ -4,27 +4,26 @@
 }
 header{
 background-color:white;
-
-height: 100px;
-width: 100%;
+height:100px;
+max-width: 100%;
 background-size: contain;
 
 }
 body{
     background-color: rgb(240, 244, 247);
-    height: 100px;
-    width: 100%;
+    height: 100vh;
+    max-width: 100%;
 }
 .main-nav{
     float:flex;
-    margin-left: 150px;
+    margin-left: 250px;
    
     
 
 }
 .main-nav li{
     display:inline-flex;
-    margin-top: 20px;
+    margin-top:20px;
     
     
 }
@@ -60,12 +59,11 @@ form.search button{
     float:right;
     width: 30px;
     height: 45px;
-    background-color: rgb(94, 94, 252);
+    background-color: darkblue;
     margin-left: 20px;
     color: lime;
     font-size: 17px;
-    border: 1px solid green;
-    
+    border: 1px solid blue;
     cursor: pointer;
     margin-top: -40px;
 }
@@ -82,7 +80,7 @@ form.search::after{
 
 .content2{
  width: 30%; 
- height:100% ;  
+ height:68% ;  
  background-color: white;
  margin-left: 70%;
  margin-top: -75vh;
@@ -90,8 +88,7 @@ form.search::after{
 }
 .main-blog{
     float:center;
-    position: fixed;
-
+    
 }
 .main-blog li{
     display: block;
@@ -111,6 +108,7 @@ h1{
     font-size: 15px;
     font-family:Arial, Helvetica, sans-serif;
     color:darkblue;
+    font-weight: bold;
 
 
 }
@@ -158,7 +156,7 @@ p{
 }
 .signinmodal{
     width: 100%;
-    height: 100vh;
+    height:auto;
     background: rgba(20, 20, 20, 0.795);
     position: fixed;
     display: block;
@@ -171,7 +169,7 @@ p{
     height:70vh;
     text-align: center;
     font-size:20px;
-    box-shadow: blue 10px 10px 15px;
+    box-shadow: darkblue 10px 10px 15px;
 }
 
 #close{
@@ -180,15 +178,43 @@ p{
     right: 25px;
     font-size: 35px;
     font-weight:bold ;
-    margin-right:-40%;
+    margin-right:40%;
     color: brown;
-    margin-top: -100px;
+    margin-top: 10px;
 }
 #close:hover{
     color: rgb(14, 14, 223);
+    cursor: pointer;
 }
 .blog1{
     width: 100%;
     height: 100vh;
     margin:3% 10% 5% 5%;
     }
+input[type=text],input[type=password]{
+    max-width: 100%;
+    padding: 10px 15px;
+    border: 2px solid darkblue;
+    margin-top: 20px;
+    display: inline-block;
+}
+input[type=button]{
+    background: darkblue;
+    width: 100px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+}
+input[type=button]:hover{
+    background: rgb(9, 161, 250);
+}
+footer{
+    background-color: darkblue;
+    height: 100px;
+    width: 100%;
+    margin-top: 140vh;
+    display: block;
+    text-align: center;
+    color: white;
+}
