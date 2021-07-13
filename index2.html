@@ -23,6 +23,7 @@
 
             </div>
         </div>
+        <form name="myform" action=""  onsubmit="return validateForm()">
         <div id="showmodal" class="signinmodal" style="display: none;">
             
             <div class="signincard" >
@@ -33,14 +34,15 @@
                 <label><b> Username</b></label>
                 <input type="text" placeholder="Enter your Username"><br>
                 <label><b> password</b></label>
-                <input type="password" placeholder=" Enter your password"value="" name="pass"><br>
-                <input type="button" value="submit"><br>
+                <input id="word" type="password" placeholder=" Enter your password"  value="" name="pass" onclick="validateForm()"><br>
+                <input type="button" onclick="validateForm()" value="submit"><br>
                 <label><b> remember me</b></label>
                 <input type="checkbox" value="rem" name="remember your password">
             </div>
             
             </div>
         </div>
+    </form>
 <div class="container">
     <div class="cardcontent">
        <img src="images/istockphoto-1180684429-612x612.jpg" class="image">
@@ -131,6 +133,7 @@
     <div class="myfooter">
 
     </div>
+    <script src="./jscript/script.js"></script>
     
     
 </body>

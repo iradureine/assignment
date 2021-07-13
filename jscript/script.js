@@ -1,10 +1,8 @@
 
-var modal=document.getElementById('showmodal');
-var btn=document.getElementById('signinshow');
-var span=document.getElementById('close')[0];
-btn.onclick=function(){modal.style.display='block';
-    
-}
-span.onclick=function(){
-    modal.style.display='none';
-}
+function validateForm() {
+    let x = document.getElementById("word").value;
+    if (x == "") {
+    innerHTML="Name must be filled out";
+      return false;
+    }
+  }
